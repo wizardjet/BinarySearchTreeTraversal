@@ -26,11 +26,11 @@ public class BinarySearchTree {
             } else if (n < currentNode.value) {
                 if (currentNode.left != null) {
                     currentNode = currentNode.left;
-                }
+                } else return false;
             } else if (n > currentNode.value) {
                 if (currentNode.right != null) {
                     currentNode = currentNode.right;
-                }
+                } else return false;
             } else return false;
         }
     }
